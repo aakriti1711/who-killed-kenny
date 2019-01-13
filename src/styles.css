@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  margin: 0 auto;
+}
+hr {
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 0 none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mainContainer {
+  color: #ffffff;
+  margin: 5rem;
+}
+/* Icons highlight effect by using CSS selector > and chainging opacity on hover*/
+.icons {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 200px;
+}
+.icons:hover > .image-wrapper {
+  opacity: 0.5;
+}
+.icons:hover > .image-wrapper:hover {
+  opacity: 1;
+}
+.image-wrapper {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  border-radius: 0.5rem;
+  width: 100px;
+  height: 180px;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+img {
+  object-fit: none;
+  object-position: 0 0;
+  width: 100px;
+  height: 150px;
+}
+/* class to get image position from sprite.png*/
+.one {
+  object-position: 0 0px;
+}
+.two {
+  object-position: -105px 0px;
+}
+.three {
+  object-position: -207px 0px;
+}
+.four {
+  object-position: -310px 0px;
+}
+.five {
+  object-position: -413px 0px;
+}
+.six {
+  object-position: -517px 0px;
+}
+.seven {
+  object-position: -619px 0px;
+}
+
+.btnDiv {
+  float: right;
+}
+.myButton {
+  background-color: #2dabf9;
+  border-radius: 5px;
+  border: 2px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 9px 23px;
+  text-decoration: none;
+  outline: none;
+}
+
+#btnReset {
+  background-color: #ededed;
+  color: #000000;
+}
