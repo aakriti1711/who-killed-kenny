@@ -27,7 +27,9 @@
     for (let i = 0; i < iconsDiv.length; i++) {
       let imgDiv = document.getElementById(iconsDiv[i].id);
       imgDiv.addEventListener("click", function() {
-        suspectDiv.appendChild(imgDiv);
+        let elClone = imgDiv.cloneNode(true);
+        imgDiv.parentNode.replaceChild(elClone, imgDiv);
+        suspectDiv.appendChild(elClone);
       });
     }
     cloneHTML("mainDiv");
